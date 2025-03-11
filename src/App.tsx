@@ -16,12 +16,10 @@ const App: React.FC = () => {
     });
   }, []);
 
-  // Search filter
   const filteredTasks = tasks.filter((task) =>
     task.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
-  // Separating favorite and non-favorite tasks
   const favoriteTasks = filteredTasks.filter((task) => task.favorite);
   const nonFavoriteTasks = filteredTasks.filter((task) => !task.favorite);
 

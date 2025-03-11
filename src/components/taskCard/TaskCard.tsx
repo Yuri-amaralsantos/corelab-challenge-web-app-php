@@ -61,7 +61,6 @@ const TaskCard: React.FC<TaskProps> = ({
 
   const handleEditToggle = () => {
     if (isEditing) {
-      // Save changes when exiting edit mode
       onUpdate({
         ...task,
         title: editedTitle,

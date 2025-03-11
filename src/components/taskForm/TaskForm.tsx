@@ -40,10 +40,9 @@ const TaskForm: React.FC<TaskFormProps> = ({ onTaskCreated }) => {
         type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     }));
 
-    // Auto resize textarea when description changes
     if (textareaRef.current) {
-      textareaRef.current.style.height = "auto"; // Reset height
-      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`; // Adjust height dynamically
+      textareaRef.current.style.height = "auto";
+      textareaRef.current.style.height = `${textareaRef.current.scrollHeight}px`;
     }
   };
 
@@ -107,7 +106,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ onTaskCreated }) => {
           src={newTask.favorite ? favoriteOn : favoriteOff}
           alt="Favorite"
           className="favorite-icon"
-          onClick={handleToggleFavorite} // Fix: use onClick instead of onChange
+          onClick={handleToggleFavorite}
         />
       </div>
     </form>
