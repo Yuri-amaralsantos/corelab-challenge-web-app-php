@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+$primary-color: #ffffff;
+
+body {
+    font-family: 'Inter';
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+}
+.containerList{
+    .cardList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 34px;
+    }
+    .titleList {
+        padding-left: 1.5rem;
+        font-size: 12px;
+    }
+    
+}
+@media (max-width: 768px) {
+    .containerList{
+        .titleList{
+        padding-left: 7rem; 
+        }
+        .cardList {
+            justify-content: center;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,68 @@
+.taskForm {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: flex-start;
+    position: relative;
+    border-radius: 3px;
+    border: 1px solid #D9D9D9;
+    width: 530px;
+    padding: 21px;
+    gap: 28px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.25);
+
+    .formTitle,
+    .formDescription {
+        border: none;
+        
+        font-size: 16px;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    .formTitle{
+        font-weight: 700;
+        font-size: 14px;
+        &::placeholder {
+            font-weight: 700;
+            font-size: 14px;
+            color: black;
+            opacity: 1;
+        }
+    } 
+    
+
+    .formDescription {
+        resize: none;
+        overflow: hidden;
+        min-height: 50px;
+        font-weight: 400;
+        font-size: 13px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 13px;
+            color: black;
+            opacity: 1;
+        }
+    }
+
+
+    .favorite-icon {
+        position: absolute;
+        right: 16px;
+        top:16px;
+        width: 20px;
+        height: 20x;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    .taskForm {
+        width: 90%;
+        border-radius: 25px;
+    }
+}   
